@@ -1,0 +1,9 @@
+{
+  "image": "ipfs://QmRVGJFgh1jrXZCuPJBF7RV7aHJdR9n2sF9293X312SdaD",
+  "attributes": [
+    { "trait_type": "Cone Color", "value": "Stacked Cones" },
+    { "trait_type": "Cone Ornament", "value": "Coneluminati" },
+    { "trait_type": "Cone Topper", "value": "Star" },
+    { "trait_type": "Background", "value": "Conemas.png" }
+  ]
+}

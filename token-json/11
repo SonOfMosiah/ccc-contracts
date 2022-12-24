@@ -1,0 +1,9 @@
+{
+  "image": "ipfs://QmNSTm7DCwvkz76MNtrepkBFEaG1F1fHhkZvjZBtv4YnkW",
+  "attributes": [
+    { "trait_type": "Cone Color", "value": "Santa" },
+    { "trait_type": "Cone Ornament", "value": "None" },
+    { "trait_type": "Cone Topper", "value": "PonPon" },
+    { "trait_type": "Background", "value": "Conemas.png" }
+  ]
+}
