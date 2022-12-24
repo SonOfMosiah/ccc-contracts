@@ -45,7 +45,7 @@ contract CuteConeClub is ERC721, ERC721Enumerable, ERC721URIStorage, Ownable {
     bool public initialized;
     /// @notice Whether the reveal URI has been set
     bool public revealed;
-    uint256 private nextId = 60;
+    uint256 private nextId = 43;
     string private baseURI_;
 
     /// @notice Mapping of the minted amount per address
@@ -125,7 +125,7 @@ contract CuteConeClub is ERC721, ERC721Enumerable, ERC721URIStorage, Ownable {
 
     function _mintToTreasury(address to) internal {
         string memory baseURI = _baseURI();
-        for (uint256 i = 0; i < 42; i++) {
+        for (uint256 i = 1; i < 43; i++) {
             _safeMint(to, i);
             _setTokenURI(i, string(abi.encodePacked(baseURI, i.toString())));
         }
