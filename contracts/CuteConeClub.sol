@@ -82,6 +82,7 @@ contract CuteConeClub is ERC721, ERC721Enumerable, ERC721URIStorage, Ownable {
         if (mintedAmount[msg.sender] + amount > MAX_MINT_AMOUNT) {
             revert MintLimitExceeded();
         }
+        mintedAmount[msg.sender] += amount;
 
         uint256 price = MINT_PRICE * amount;
         if (!IERC20(WETH).transferFrom(msg.sender, TREASURY, price)) {
