@@ -35,8 +35,8 @@ contract CuteConeClub is ERC721, ERC721Enumerable, ERC721URIStorage, Ownable {
     address immutable private WETH;
     address constant private TREASURY = 0x7e7c3543C4426B9E149a837eE843c4aD730738e4;
 
-    /// @notice Mint price in WETH (.1 WETH)
-    uint256 constant public MINT_PRICE = 1e17;
+    /// @notice Mint price in WETH (.01 WETH)
+    uint256 constant public MINT_PRICE = 0.01 ether;
     uint256 constant private MAX_MINT_AMOUNT = 10;
     /// @notice Total supply of NFTs
     uint256 constant public TOTAL_SUPPLY = 420;
@@ -54,7 +54,7 @@ contract CuteConeClub is ERC721, ERC721Enumerable, ERC721URIStorage, Ownable {
     /// @notice Set the Base URI for the preveal image
     /// @param _uri The base URI
     function setPrerevealURI(string memory _uri) external onlyOwner {
-        if (initialized) {
+        if (initialized || revealed) {
             revert AlreadyInitialized();
         }
         baseURI_ = _uri;
@@ -126,6 +126,7 @@ contract CuteConeClub is ERC721, ERC721Enumerable, ERC721URIStorage, Ownable {
 
     function _mintToTreasury(address to) internal {
         string memory baseURI = _baseURI();
+        // Mint the first 42 NFTs to the treasury starting at token ID 1
         for (uint256 i = 1; i < 43; i++) {
             _safeMint(to, i);
             _setTokenURI(i, string(abi.encodePacked(baseURI, i.toString())));
