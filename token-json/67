@@ -1,1 +1,21 @@
-{"image":"ipfs://QmTLTs7WDPuxGBuWHKjaVMMn6jXo8pu2c1BzcNPzZgyZ5s","attributes":[{"trait_type":"Cone Color","value":"Wrapping Paper"},{"trait_type":"Cone Ornament","value":"Coneluminati Green"},{"trait_type":"Cone Topper","value":"Bunny Ears"},{"trait_type":"Background","value":"Conemas.png"}]}
+{
+  "image": "ipfs://QmTLTs7WDPuxGBuWHKjaVMMn6jXo8pu2c1BzcNPzZgyZ5s",
+  "attributes": [
+    {
+      "trait_type": "Cone Color",
+      "value": "Wrapping Paper"
+    },
+    {
+      "trait_type": "Cone Ornament",
+      "value": "Coneluminati Green"
+    },
+    {
+      "trait_type": "Cone Topper",
+      "value": "Bunny Ears"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Conemas"
+    }
+  ]
+}

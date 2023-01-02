@@ -1,1 +1,21 @@
-{"image":"ipfs://QmXDxoCir1fP69SYnizEoncF3QbYQQbKNHJvQaKMYCg6c6","attributes":[{"trait_type":"Cone Color","value":"Santa"},{"trait_type":"Cone Ornament","value":"Santa Hat"},{"trait_type":"Cone Topper","value":"None"},{"trait_type":"Background","value":"Conemas.png"}]}
+{
+  "image": "ipfs://QmXDxoCir1fP69SYnizEoncF3QbYQQbKNHJvQaKMYCg6c6",
+  "attributes": [
+    {
+      "trait_type": "Cone Color",
+      "value": "Santa"
+    },
+    {
+      "trait_type": "Cone Ornament",
+      "value": "Santa Hat"
+    },
+    {
+      "trait_type": "Cone Topper",
+      "value": "None"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Conemas"
+    }
+  ]
+}

@@ -1,1 +1,21 @@
-{"image":"ipfs://QmaNnysiN6tevoYzxqYMeRHxmcWTDG95CTPE6e54No18c5","attributes":[{"trait_type":"Cone Color","value":"Wrapping Paper"},{"trait_type":"Cone Ornament","value":"Coneluminati"},{"trait_type":"Cone Topper","value":"Bronze Ball"},{"trait_type":"Background","value":"Conemas.png"}]}
+{
+  "image": "ipfs://QmaNnysiN6tevoYzxqYMeRHxmcWTDG95CTPE6e54No18c5",
+  "attributes": [
+    {
+      "trait_type": "Cone Color",
+      "value": "Wrapping Paper"
+    },
+    {
+      "trait_type": "Cone Ornament",
+      "value": "Coneluminati"
+    },
+    {
+      "trait_type": "Cone Topper",
+      "value": "Bronze Ball"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Conemas"
+    }
+  ]
+}

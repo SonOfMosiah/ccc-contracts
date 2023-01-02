@@ -4,6 +4,6 @@
     { "trait_type": "Cone Color", "value": "Red" },
     { "trait_type": "Cone Ornament", "value": "None" },
     { "trait_type": "Cone Topper", "value": "PonPon" },
-    { "trait_type": "Background", "value": "Conemas.png" }
+    { "trait_type": "Background", "value": "Conemas" }
   ]
 }

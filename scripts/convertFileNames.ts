@@ -19,7 +19,7 @@ async function main() {
   // Read the contents of the folder
   const files = fs.readdirSync(folderPath);
 
-  // remove the files before file named "142-Wrapping Paper-None-PonPon-Conemas.png"
+  // remove the files before file named "142-Wrapping Paper-None-PonPon-Conemas"
   //   files.splice(0, 48);
 
   // Iterate through the files and store their names in the array

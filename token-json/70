@@ -1,1 +1,21 @@
-{"image":"ipfs://QmTiFkGMGd8vN5vLfGM1BndRFacpBUrx1sRmkMsbV6Gmrf","attributes":[{"trait_type":"Cone Color","value":"Pink"},{"trait_type":"Cone Ornament","value":"Dot"},{"trait_type":"Cone Topper","value":"None"},{"trait_type":"Background","value":"Conemas.png"}]}
+{
+  "image": "ipfs://QmTiFkGMGd8vN5vLfGM1BndRFacpBUrx1sRmkMsbV6Gmrf",
+  "attributes": [
+    {
+      "trait_type": "Cone Color",
+      "value": "Pink"
+    },
+    {
+      "trait_type": "Cone Ornament",
+      "value": "Dot"
+    },
+    {
+      "trait_type": "Cone Topper",
+      "value": "None"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Conemas"
+    }
+  ]
+}

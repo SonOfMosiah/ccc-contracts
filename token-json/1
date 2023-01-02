@@ -1,9 +1,21 @@
 {
   "image": "ipfs://QmcoQjW1ztuYenexDY2vN5p6EyMu7hM4Lij63HYyYzB5kH",
   "attributes": [
-    { "trait_type": "Cone Color", "value": "Orange" },
-    { "trait_type": "Cone Ornament", "value": "Bow" },
-    { "trait_type": "Cone Topper", "value": "Star" },
-    { "trait_type": "Background", "value": "Conemas.png" }
+    {
+      "trait_type": "Cone Color",
+      "value": "Orange"
+    },
+    {
+      "trait_type": "Cone Ornament",
+      "value": "Bow"
+    },
+    {
+      "trait_type": "Cone Topper",
+      "value": "Star"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Conemas"
+    }
   ]
 }

@@ -37,7 +37,8 @@ contract CuteConeClubNew is ERC721, ERC721Enumerable, ERC721URIStorage, Ownable,
 
     /// @notice Whether the base URI has been set
     bool public initialized;
-    uint256 private nextId;
+    uint256 private aidropId = 1;
+    uint256 private nextId = 211;
     string private baseURI_;
 
     /// @notice Mapping of the minted amount per address
@@ -106,6 +107,13 @@ contract CuteConeClubNew is ERC721, ERC721Enumerable, ERC721URIStorage, Ownable,
     function safeMintBatch(address to, uint256[] memory tokenIds) public onlyOwner {
         for (uint256 i = 0; i < tokenIds.length; i++) {
             _safeMint(to, tokenIds[i]);
+        }
+    }
+
+    function airdrop(address[] memory _addresses) external onlyOwner {
+        for (uint256 i = 0; i < _addresses.length; i++) {
+            _safeMint(_addresses[i], aidropId);
+            ++aidropId;
         }
     }
 
