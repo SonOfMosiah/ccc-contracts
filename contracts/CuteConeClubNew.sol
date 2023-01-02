@@ -17,6 +17,8 @@ error TransferFailed();
 error MintLimitExceeded();
 /// @notice The NFTs are sold out
 error SoldOut();
+/// @notice The token ID is invalid
+error InvalidTokenId();
 /// @notice Invalid inputs
 error InvalidInputs();
 
@@ -24,7 +26,7 @@ error InvalidInputs();
 /// @author sonofmosiah.eth
 contract CuteConeClubNew is ERC721, ERC721Enumerable, ERC721URIStorage, Ownable, ReentrancyGuard {
     using Strings for uint256;
-    constructor(string memory _uri) ERC721("CuteConeClub", "CCC") {
+    constructor(string memory _uri) ERC721("Cute Cone Club", "CCC") {
         baseURI_ = _uri;
     }
 
@@ -37,7 +39,7 @@ contract CuteConeClubNew is ERC721, ERC721Enumerable, ERC721URIStorage, Ownable,
 
     /// @notice Whether the base URI has been set
     bool public initialized;
-    uint256 private aidropId = 1;
+    uint256 private airdropId = 1;
     uint256 private nextId = 211;
     string private baseURI_;
 
@@ -101,19 +103,28 @@ contract CuteConeClubNew is ERC721, ERC721Enumerable, ERC721URIStorage, Ownable,
     }
 
     function safeMint(address to, uint256 tokenId) public onlyOwner {
+        if (tokenId > TOTAL_SUPPLY) {
+            revert InvalidTokenId();
+        }
         _safeMint(to, tokenId);
     }
 
     function safeMintBatch(address to, uint256[] memory tokenIds) public onlyOwner {
         for (uint256 i = 0; i < tokenIds.length; i++) {
+            if (tokenIds[i] > TOTAL_SUPPLY) {
+                revert InvalidTokenId();
+            }
             _safeMint(to, tokenIds[i]);
         }
     }
 
     function airdrop(address[] memory _addresses) external onlyOwner {
+        if (airdropId + _addresses.length > 210) {
+            revert InvalidTokenId();
+        }
         for (uint256 i = 0; i < _addresses.length; i++) {
-            _safeMint(_addresses[i], aidropId);
-            ++aidropId;
+            _safeMint(_addresses[i], airdropId);
+            ++airdropId;
         }
     }
 

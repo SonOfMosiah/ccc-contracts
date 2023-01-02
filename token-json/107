@@ -1,9 +1,1 @@
-{
-  "image": "ipfs://QmYfokihGUceH1dnsuWbrc1vB3tv1VG9reLaWdZSP43fot",
-  "attributes": [
-    { "trait_type": "Cone Color", "value": "Santa" },
-    { "trait_type": "Cone Ornament", "value": "Drops" },
-    { "trait_type": "Cone Topper", "value": "PonPon" },
-    { "trait_type": "Background", "value": "Conemas" }
-  ]
-}
+{"image":"ipfs://QmYfokihGUceH1dnsuWbrc1vB3tv1VG9reLaWdZSP43fot","attributes":[{"trait_type":"Cone Color","value":"Santa"},{"trait_type":"Cone Ornament","value":"Drops"},{"trait_type":"Cone Topper","value":"PonPon"},{"trait_type":"Background","value":"Conemas"}],"tokenId":"107","description":"Cute Coner #107","name":"Cute Coner #107"}

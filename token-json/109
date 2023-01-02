@@ -1,9 +1,1 @@
-{
-  "image": "ipfs://QmWfLxsfo3EoZnaw73eeoFyfQW58MffsHG6Q8vZNyPNxaF",
-  "attributes": [
-    { "trait_type": "Cone Color", "value": "Orange" },
-    { "trait_type": "Cone Ornament", "value": "Baubles" },
-    { "trait_type": "Cone Topper", "value": "Red Ball" },
-    { "trait_type": "Background", "value": "Conemas" }
-  ]
-}
+{"image":"ipfs://QmWfLxsfo3EoZnaw73eeoFyfQW58MffsHG6Q8vZNyPNxaF","attributes":[{"trait_type":"Cone Color","value":"Orange"},{"trait_type":"Cone Ornament","value":"Baubles"},{"trait_type":"Cone Topper","value":"Red Ball"},{"trait_type":"Background","value":"Conemas"}],"tokenId":"109","description":"Cute Coner #109","name":"Cute Coner #109"}
